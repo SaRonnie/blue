@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+background: url("../images/layout/bg.jpg") repeat;
+           
+}
+ul li{
+	list-style: none;
+}
+h3{
+color: #3c6e9a;
+font: bold 24px 'Roboto 700', sans-serif;
+height:100%;
+padding: 0 10px;
+display:table-cell;
+text-align: center;  
+vertical-align:middle; 
+overflow:hidden;
+}
+
+/*----------------------------------HEAD-------------------------------*/
+.wrapper{
+	width: 1140px;
+	margin: 0 auto;
+	background: url("../images/content/flash.png") no-repeat top,
+	url("../images/content/flash.png") no-repeat bottom;
+}
+
+
+#page-header{
+	width: 100%;
+	height: 111px;
+	padding: 40px 0 0;
+}
+
+.logo{
+	width: 308px;
+	height: 68px;
+	margin: 21px 21px ;
+	float: left;
+	text-indent: -90000px;
+	background: url("../images/layout/logo.png") no-repeat 0 0;
+}
+
+.logo:hover{
+	opacity: 0.5;
+}
+
+#main-navi{
+	margin: 40px 23px 0 0;
+	float: right;
+}
+
+#main-navi ul {
+padding:5px; 
+}
+#main-navi li {
+display:inline;
+border-left:1px solid #0c3559;
+padding:0 2px 0 2px;
+float: left;
+}
+#main-navi li:first-child {
+border:none;
+}
+
+#main-navi li a{
+    height: 18px; 
+    padding: 11px 10px;
+	float: right;
+	position: relative;	
+	text-decoration: none;
+	color: white;
+	font: normal 15px 'Roboto Regular', sans-serif;
+	background: url("../images/content/mmc.png") repeat-x 0 -9000px;
+	margin: -4px 0;
+}
+
+#main-navi li a:hover, #main-navi li.active a{
+	color: white;
+	background-position: 0 0;
+}
+#main-navi li a:hover:before, #main-navi li a:hover:after, #main-navi li.active a:before, #main-navi li.active a:after{
+	display: block;
+}
+#main-navi li a:before, #main-navi li a:after{
+	width: 4px;
+	height: 42px;
+	content: '';
+	position: absolute;
+	top: 0;
+	display: none;
+}
+#main-navi li a:before{
+	left: -4px;
+	background: url("../images/content/mmlb.png") no-repeat 0 0;
+}
+#main-navi li a:after{
+	right: -4px;
+	background: url("../images/content/mmrb.png") no-repeat 0 0;
+}
+
+
+/*----------------------------------BODY-------------------------------*/
+#page-body {
+background: url("../images/content/main-top-bg.jpg") no-repeat left top, 
+            url("../images/content/main-bot-bg.jpg") no-repeat left bottom,
+            url("../images/content/main-bg.jpg") repeat;
+}
+
+
+.about {
+padding: 62px 0 36px 0;
+}
+.about p {
+color: #36597d;
+font: 24px 'Roboto', sans-serif;
+padding: 20px;
+}
+
+.about h1 {
+color: #184771;
+font: bold 40px 'Roboto 700', sans-serif;
+}
+
+
+#maincontent{
+border-top:2px solid #f0f0f0;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+#maincontent li{
+float:left;
+padding: 41px 27px 58px 0;
+}
+#maincontent li:last-child{padding:41px 0 58px 0;}
+
+#maincontent li a{
+    height: auto; 
+    padding: 11px 30px;
+	position: relative;	
+	text-decoration: none;
+	color: white;
+	font: normal 17px 'Roboto Regular', sans-serif;
+	background: url("../images/content/button.png") repeat-x 0 -9000px;
+	background-position: 0 0;
+	display:table;
+    margin:15px auto;	
+	}
+	
+#maincontent li a:before, #maincontent li a:after{
+	width: 2px;
+	height: 42px;
+	content: '';
+	position: absolute;
+	top: 0;
+	}
+	
+#maincontent li a:before{
+	left: -2px;
+	background: url("../images/content/button-l.png") no-repeat 0 0;
+}
+#maincontent li a:after{
+	right: -2px;
+	background: url("../images/content/button-r.png") no-repeat 0 0;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    width: 192px; 
+	height: 281px;
+    border: 1px solid #dfdfdf; 
+    overflow:hidden; 	
+}
+	
+.title{
+	background: url("../images/content/box-top.png") repeat-x ;
+	height: 91px;
+    border: 1px solid #dfdfdf; 
+	overflow:hidden;
+	display:table;
+} 
+
+
+.center-img{
+    width: 192px; 
+	height: 112px;
+    border: 1px solid #dfdfdf; 
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+	max-width: 192px;
+	max-height: 112px;
+}
+
+	
+.button{
+	background: url("../images/content/box-bot.png") repeat-x ;
+  	height: 72px;
+    border: 1px solid #dfdfdf; 
+      }
+
+
+.info {
+background: #f3f7f9 url("../images/content/discr-top-bg.jpg") repeat-x ;
+padding: 45px 23px 65px 23px;
+display:inline-block;
+margin-bottom:4px;
+}
+
+.info h2 {
+color: #184771;
+font: bold 40px 'Roboto 700', sans-serif;	
+}
+
+.info p {
+color: #36597d;
+font: normal 19px 'Roboto Light', sans-serif;
+margin: 10px; 
+}
+
+/*----------------------------------FOOTER-------------------------------*/
+#footer{
+width:1140px;
+height:167px;
+padding: 12px 23px 10px 23px;
+margin: auto;
+}
+
+#footer a {
+color:#59a9da;
+text-decoration: none;
+}
+#footer-navi a {
+color:#5e85aa;
+}
+.copyright{
+float: left;
+color: #7f9cb7;
+}
+.copyright a:before {
+ content: url("../images/content/tw-logo.png");
+ margin: 0 10px;
+ 
+}
+ 
+#footer-navi{
+padding:7px 45px;
+float: right;
+}
+#footer-navi li {
+float: left;
+}
+#footer-navi li  {
+position: relative;	
+display:inline;
+border-left:2px solid #5e85aa;
+padding:0 5px;
+float: left;
+}
+
+#footer-navi li:first-child {
+border:none;
